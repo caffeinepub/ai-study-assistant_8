@@ -19,65 +19,64 @@
 @layer base {
   :root {
     --radius: 0.875rem;
-    /* Indigo/violet primary */
-    --background: 0.975 0.008 270;
-    --foreground: 0.18 0.02 270;
-    --card: 0.995 0.003 270;
-    --card-foreground: 0.18 0.02 270;
-    --popover: 0.995 0.003 270;
-    --popover-foreground: 0.18 0.02 270;
-    /* Deep indigo primary */
-    --primary: 0.55 0.22 264;
-    --primary-foreground: 0.99 0.003 270;
-    --secondary: 0.945 0.015 270;
-    --secondary-foreground: 0.25 0.02 270;
-    --muted: 0.945 0.012 270;
-    --muted-foreground: 0.52 0.015 270;
-    /* Orange accent */
-    --accent: 0.72 0.19 45;
-    --accent-foreground: 0.99 0.003 270;
+    /* Orange (#FF6B2B) primary palette */
+    --background: 0.98 0.005 50;
+    --foreground: 0.18 0.02 40;
+    --card: 1 0 0;
+    --card-foreground: 0.18 0.02 40;
+    --popover: 1 0 0;
+    --popover-foreground: 0.18 0.02 40;
+    /* Warm orange primary — matches #FF6B2B */
+    --primary: 0.65 0.22 40;
+    --primary-foreground: 0.99 0.003 40;
+    --secondary: 0.95 0.01 50;
+    --secondary-foreground: 0.28 0.02 40;
+    --muted: 0.94 0.01 50;
+    --muted-foreground: 0.52 0.015 50;
+    --accent: 0.65 0.22 40;
+    --accent-foreground: 0.99 0.003 40;
     --destructive: 0.577 0.245 27;
     --destructive-foreground: 0.985 0 0;
-    --border: 0.88 0.012 270;
-    --input: 0.88 0.012 270;
-    --ring: 0.55 0.22 264;
-    --chart-1: 0.55 0.22 264;
-    --chart-2: 0.72 0.19 45;
-    --chart-3: 0.6 0.15 160;
+    --border: 0.9 0.012 50;
+    --input: 0.9 0.012 50;
+    --ring: 0.65 0.22 40;
+    --chart-1: 0.65 0.22 40;
+    --chart-2: 0.55 0.2 264;
+    --chart-3: 0.6 0.16 160;
     --chart-4: 0.65 0.18 320;
     --chart-5: 0.7 0.15 200;
     --sidebar: 0.985 0 0;
     --sidebar-foreground: 0.145 0 0;
-    --sidebar-primary: 0.55 0.22 264;
+    --sidebar-primary: 0.65 0.22 40;
     --sidebar-primary-foreground: 0.985 0 0;
     --sidebar-accent: 0.97 0 0;
     --sidebar-accent-foreground: 0.205 0 0;
     --sidebar-border: 0.922 0 0;
-    --sidebar-ring: 0.55 0.22 264;
+    --sidebar-ring: 0.65 0.22 40;
   }
 
   .dark {
-    --background: 0.12 0.025 270;
-    --foreground: 0.95 0.01 270;
-    --card: 0.16 0.02 270;
-    --card-foreground: 0.95 0.01 270;
-    --popover: 0.16 0.02 270;
-    --popover-foreground: 0.95 0.01 270;
-    --primary: 0.65 0.22 264;
-    --primary-foreground: 0.99 0.003 270;
-    --secondary: 0.22 0.025 270;
-    --secondary-foreground: 0.85 0.015 270;
-    --muted: 0.22 0.02 270;
-    --muted-foreground: 0.6 0.015 270;
-    --accent: 0.72 0.19 45;
-    --accent-foreground: 0.99 0.003 270;
+    --background: 0.12 0.02 40;
+    --foreground: 0.95 0.01 50;
+    --card: 0.16 0.018 40;
+    --card-foreground: 0.95 0.01 50;
+    --popover: 0.16 0.018 40;
+    --popover-foreground: 0.95 0.01 50;
+    --primary: 0.68 0.22 40;
+    --primary-foreground: 0.99 0.003 40;
+    --secondary: 0.22 0.02 40;
+    --secondary-foreground: 0.85 0.015 50;
+    --muted: 0.22 0.018 40;
+    --muted-foreground: 0.6 0.015 50;
+    --accent: 0.68 0.22 40;
+    --accent-foreground: 0.99 0.003 40;
     --destructive: 0.65 0.22 27;
     --destructive-foreground: 0.985 0 0;
-    --border: 0.28 0.02 270;
-    --input: 0.28 0.02 270;
-    --ring: 0.65 0.22 264;
-    --chart-1: 0.65 0.22 264;
-    --chart-2: 0.72 0.19 45;
+    --border: 0.28 0.02 40;
+    --input: 0.28 0.02 40;
+    --ring: 0.68 0.22 40;
+    --chart-1: 0.68 0.22 40;
+    --chart-2: 0.65 0.22 264;
     --chart-3: 0.65 0.15 160;
     --chart-4: 0.7 0.18 320;
     --chart-5: 0.72 0.15 200;
@@ -149,19 +148,19 @@
   .geo-bg {
     background-image: radial-gradient(
         circle at 20% 20%,
-        oklch(0.55 0.22 264 / 0.04) 0%,
+        oklch(0.65 0.22 40 / 0.06) 0%,
         transparent 50%
       ),
       radial-gradient(
         circle at 80% 80%,
-        oklch(0.72 0.19 45 / 0.04) 0%,
+        oklch(0.65 0.22 40 / 0.04) 0%,
         transparent 50%
       );
   }
+  .shadow-orange {
+    box-shadow: 0 4px 20px 0 oklch(0.65 0.22 40 / 0.35);
+  }
   .shadow-indigo {
     box-shadow: 0 4px 20px 0 oklch(0.55 0.22 264 / 0.25);
-  }
-  .shadow-orange {
-    box-shadow: 0 4px 20px 0 oklch(0.72 0.19 45 / 0.3);
   }
 }
